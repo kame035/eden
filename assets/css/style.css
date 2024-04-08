@@ -1,0 +1,1077 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+    font-family: "Montserrat";
+    transition: .5s;
+}
+
+/* ширина */
+.w1790 {
+    width: 1790px;
+    margin: 0 auto;
+}
+
+.py {
+    padding: 30px 0;
+}
+
+/* установка шрифтов */
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+/* для карточек */
+.shadow {
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25);
+}
+/* заголовок */
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+/* для ссылок */
+nav a {
+    font-size: 16px;
+    color: #636363;
+}
+
+
+/* хедер */
+.header-in {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 33px;
+    margin-top: 13px;
+    background-color: #fff;
+    z-index: 345;
+    width: 1790px;
+    border-radius: 24px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25);
+}
+
+.account {
+    display: flex;
+    gap: 39px;
+}
+
+.header-in nav {
+    display: flex;
+    gap: 39px;
+}
+
+#burger,
+[for=burger] {
+    display: none;
+}
+/* конец хедера */
+
+/* баннер */
+.banner-img {
+    position: relative;
+    margin-top: 100px;
+}
+
+.banner-txt {
+    position: absolute;
+    text-align: end;
+    top: 60%;
+    right: 10%;
+    color: #fff;
+}
+
+.banner-tel,
+.btn-cat-tel,
+.ac-tel {
+    display: none;
+}
+
+.btn-cat {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    color: #fff;
+    background-color: #ffffff1d;
+    padding: 27px 38px;
+    border: 1px solid #fff;
+    border-radius: 49px;
+    margin-top: 32px;
+}
+
+.btn-cat a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+}
+.btn-cat{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+/* конец баннер */
+
+/* блок о нас */
+.about {
+    display: flex;
+    border-radius: 24px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 51px 39px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 60px;
+    color: #636363;
+    padding-bottom: 23px;
+}
+
+.about-text p {
+    font-size: 20px;
+    color: #636363;
+}
+.about {
+    position: relative;
+    overflow: hidden;
+}
+
+.about:hover .about-img img {
+    transform: scale(1.02);
+}
+/* конец блока */
+
+/* каталог */
+.cards-full .more {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    border-radius: 24px;
+}
+
+.card-bag {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 13px 25px;
+    cursor: pointer;
+}
+
+.card-ab h4 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 24px 24px;
+    padding: 21px 14px;
+}
+.card-text{
+    color: #000;
+}
+
+.card-text h3 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.more a {
+    padding: 22px 110px;
+    border-radius: 24px;
+    color: black;
+}
+
+.more {
+    margin: 80px 0;
+    text-align: center;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img img {
+    transform: scale(1.02); /* Увеличение картинки на 10% при наведении */
+}
+/* конец каталога */
+
+/* футер */
+footer {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #636363;
+}
+
+.footer-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 36px;
+    border-radius: 24px;
+}
+
+footer nav {
+    display: flex;
+    gap: 60px;
+}
+
+.foot-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 18px 31px;
+    border-radius: 0px 34px 34px 0;
+}
+
+.subs p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #636363;
+    padding-bottom: 16px;
+}
+
+.form-btn img {
+    width: 17%;
+}
+
+.form input {
+    border: 1px solid black;
+    padding: 20px 23px;
+    border-radius: 34px 0 0 34px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+}
+/* конец футера */
+
+/* один товар */
+.item-full {
+    display: flex;
+    gap: 37px;
+}
+
+.item-full {
+    margin-top: 100px;
+}
+
+.item-txt {
+    position: sticky;
+    top: 14%;
+    border-radius: 24px;
+    padding: 67px;
+    height: 663px;
+}
+
+.art {
+    font-size: 14px;
+    color: #636363;
+    padding: 24px 0 17px;
+}
+
+.category {
+    font-size: 20px;
+    color: #636363;
+}
+
+.item-txt h4 {
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+    padding: 17px 0 24px;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+}
+
+.item-txt h2 {
+    font-weight: 500;
+    font-size: 48px;
+    color: #000;
+    padding-top: 24px;
+
+}
+.log-ad button:hover{
+    background-color: #e1e1e1;
+}
+.more a:hover {
+    box-shadow: 1px 1px 10px black;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px rgb(95, 95, 95);
+}
+.card-bag a{
+    color: #000;
+}
+.item-txt button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 17px 0;
+    border-radius: 24px;
+    cursor: pointer;
+}
+/* конец */
+
+/* админ панель */
+.admin-panel {
+    display: flex;
+    gap: 37px;
+}
+
+.admin-img {
+    width: 435px;
+    height: 536px;
+}
+
+.cards-admin {
+    gap: 10px;
+}
+
+.nav-admin {
+    position: sticky;
+    top: 1%;
+    padding: 32px 43px;
+    width: 706px;
+    height: 791px;
+    border-radius: 24px;
+}
+
+.pr-img {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 30px 0;
+}
+
+.pr-add {
+    border-top: 1px solid #63636362;
+    border-bottom: 1px solid #63636362;
+}
+
+.admin {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-avatar {
+    padding-bottom: 20px;
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 330px;
+}
+
+.products p {
+    color: #636363;
+}
+
+.delete::before {
+    content: url(../images/icons/delete.png);
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.btns-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.delete {
+    padding: 13px 16px;
+    border: 1px solid #880000;
+    color: #880000;
+    border-radius: 13px;
+}
+
+.edit::before {
+    content: url(../images/icons/edit.png);
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.edit {
+    padding: 13px;
+    border: 1px solid #065F2F;
+    color: #065F2F;
+    border-radius: 13px;
+}
+
+.pr-item p {
+    color: #636363;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.form-inp form {
+    display: flex;
+    gap: 24px;
+}
+
+.cat-input {
+    display: flex;
+    gap: 21px;
+}
+
+.category input,
+select {
+    width: 435px;
+    height: 72px;
+    padding: 0 25px;
+    border-radius: 24px;
+    margin-bottom: 15px;
+}
+
+.name input {
+    width: 100%;
+}
+
+.disc input {
+    height: 100px;
+}
+
+.pr-item h3 {
+    font-size: 36px;
+    color: #636363;
+    padding-bottom: 40px;
+}
+
+.form-inp form p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #636363;
+    padding-bottom: 11px;
+
+}
+/* конец страницы товары у админа */
+
+/* добавить товар */
+.form-full{
+    text-align: center;
+}
+.form-full h2 {
+    margin-top: 120px;
+}
+
+.log-ad {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 auto;
+    width: 1000px;
+    gap: 10px;
+}
+.log-ad input{
+    width: 1000px;
+    height: 100px;
+    padding: 0 30px;
+    border-radius: 24px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.log-ad p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.log-ad button{
+    color: black;
+    padding: 20px 0;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.create{
+    font-size: 20px;
+    padding-bottom: 54px;
+}
+.in p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* конец страницы */
+
+/* адаптив */
+@media screen and (max-width: 376px) {
+    /* ширина */
+    .w1790 {
+        width: 365px;
+        margin: 0 auto;
+    }
+    /* ссылки */
+    a {
+        font-size: 10px;
+    }
+    /* заголовки */
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 10px;
+    }
+
+    .shadow {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    /* хедер */
+    .header-in {
+        width: 366px;
+        padding: 15px 33px;
+    }
+
+    .header-in .nav,
+    .account {
+        display: none;
+    }
+
+    [for=burger] {
+        display: block;
+        position: fixed;
+        top: 20px;
+        width: 20px;
+        right: 40px;
+    }
+
+    [for=burger]::before {
+        content: url(../images/icons/menu.png);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header-in nav {
+        flex-direction: column;
+    }
+
+    .nav {
+        position: fixed;
+        top: 12%;
+        width: 80%;
+        right: 2%;
+        background: #fff;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 1px 1px 3px gray;
+        border-radius: 20px;
+    }
+
+    .nav a {
+        color: #000;
+        font-size: 20px;
+    }
+
+    #burger:checked+label+.nav {
+        display: block;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../images/icons/cross.png);
+    }
+
+    .ac-tel {
+        display: block;
+    }
+
+    .exitt {
+        margin-left: 180px;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .logo img {
+        width: 50px;
+    }
+    /* конец хедера */
+
+    /* баннер */
+    .banner-img,
+    .banner-txt,
+    .btn-cat {
+        position: static;
+        color: #000;
+    }
+    .banner-full{
+        padding: 15px 0;
+    }
+    .btn-cat{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 30px 10px 0 30px;
+    }
+
+    .ac {
+        display: flex;
+        gap: 40px;
+    }
+
+    .banner-txt {
+        color: #000;
+    }
+
+    .ban {
+        display: none;
+    }
+
+    .banner-tel,
+    .btn-cat-tel {
+        display: block;
+    }
+    .banner-tel {
+        margin-top: 70px;
+    }
+    .banner-img {
+        margin-top: 50px;
+    }
+
+    .btn-cat {
+        margin: 0;
+    }
+
+    .btn-cat-tel a {
+        color: #000;
+        font-size: 20px;  
+        width: 130px;
+    }
+
+    .btn-cat-tel {
+        text-align: end;
+        display: flex;
+        gap: 60px;
+
+        border: 1px solid #000;
+        padding: 20px 50px;
+        border-radius: 34px;
+    }
+
+    /* конец баннера */
+
+    /* о нас */
+    .about {
+        flex-direction: column;
+        padding: 10px;
+        width: 360px;
+    }
+
+    .about-img img {
+        width: 340px;
+        border-radius: 24px;
+    }
+
+    .about-text p {
+        font-size: 10px;
+    }
+
+    .about-text {
+        margin: 5px;
+    }
+    /* конец блока */
+
+    /* карточки */
+    .cards {
+        gap: 12px;
+    }
+
+    .card-pr {
+        width: 175px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-text {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 13px;
+    }
+
+    .card-text h4 {
+        font-size: 13px;
+    }
+
+    .card-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-bag {
+        top: 3%;
+        right: 3%;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .card-bag img {
+        width: 10px;
+    }
+
+    .card-bag a {
+        font-size: 7px;
+    }
+
+    .more a {
+        padding: 20px 100px;
+        border-radius: 24px;
+        color: black;
+    }
+
+    .more {
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    /* конец карточек */
+
+    /* футер */
+    .footer-full {
+        justify-content: left;
+        align-items: start;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .subs p {
+        font-size: 15px;
+        color: #636363;
+        padding-bottom: 16px;
+    }
+
+    .foot-lg {
+        width: 20px;
+    }
+
+    .form input {
+        border: 1px solid black;
+        padding: 13px 10px;
+        border-radius: 34px 0 0 34px
+    }
+
+    .subs p {
+        padding-bottom: 5px;
+    }
+
+    .form-btn {
+        padding: 13px 31px;
+    }
+
+    footer input {
+        width: 150px;
+    }
+
+    .foot-item {
+        margin-bottom: 90px;
+    }
+
+    .item-full {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 50px;
+    }
+
+    .item-img img {
+        width: 365px;
+    }
+
+    .item-txt {
+        padding: 0 15px;
+        height: 300px;
+    }
+
+    .desc {
+        font-size: 10px;
+    }
+
+    .item-txt h4 {
+        font-size: 20px;
+        padding: 7px 0 11px
+    }
+
+    .art {
+        font-size: 10px;
+        padding: 17px 0 3px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        left: 0;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .item-txt h2 {
+        font-weight: 500;
+        font-size: 28px;
+        color: #000;
+        padding-top: 24px;
+    }
+
+    .item-txt button {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .item-txt button img {
+        width: 20px;
+    }
+
+
+
+    .nav-admin {
+        position: fixed;
+        width: 365px;
+        z-index: 345556;
+        padding: 30px;
+        width: 100%;
+        height: 100px;
+        left: 0;
+        margin-top: 145%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 0px;
+        gap: 55px;
+    }
+
+    .admin {
+        padding-top: 30px;
+    }
+
+    .admin-avatar img {
+        width: 35px;
+    }
+
+    .products {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 55px;
+    }
+
+    .products img {
+        width: 35px;
+    }
+
+    .prs-img {
+        display: flex;
+        flex-direction: row;
+        gap: 55px;
+        justify-content: space-between;
+    }
+
+
+    .pr-img,
+    .exit {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .pr-add {
+        border: none;
+        text-align: center;
+        width: 50px;
+    }
+
+    .admin-img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .btns-cards {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px ;
+    }
+
+    .delete,
+    .edit {
+        padding: 8px 10px;
+    }
+
+    .pr-item p {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .pr-item h3 {
+        font-size: 25px;
+        color: #636363;
+        padding-bottom: 0;
+    }
+
+    .admin-panel-tel {
+        margin-bottom: 70px;
+    }
+
+
+
+
+
+    .form-inp form {
+        flex-direction: column;
+    }
+
+    .pr-item h3 {
+        font-size: 20px;
+        padding-bottom: 1px;
+    }
+
+    form p {
+        font-size: 15px;
+    }
+
+    .image-upload img {
+        width: 360px;
+    }
+
+    .cat-input {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .category input,
+    select {
+        width: 361px;
+        height: 50px;
+        margin-bottom: 10px;
+
+    }
+
+    .form-inp-tel {
+        margin-bottom: 60px;
+    }
+
+
+
+
+    .form-full h2 {
+        margin-top: 60px;
+    }
+    .log-ad input {
+        width: 365px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .log-ad button {
+        width: 365px;
+        font-size: 20px;
+    }
+    .log-ad {
+        width: 365px; 
+        gap: 5px;
+    }
+    .log-ad p{
+        font-size: 15px;
+    }
+    .in p, .in a{
+        font-size: 15px;
+    }
+    .create {
+        font-size: 15px;
+        padding-bottom: 27px;
+    }
+}

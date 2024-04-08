@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDEN</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- навигация администратора -->
+    <section class="admin-panel w1790 py">
+        <div class="nav-admin shadow">
+            <div class="admin">
+                <div class="admin-avatar">
+                    <img src="assets/images/icons/admin.png" alt="admin">
+                </div>
+                <p>ФИО</p>
+            </div>
+            <div class="products">
+                <div class="prs-img">
+                    <a class="pr-img" href="admin.html">
+                        <img src="assets/images/icons/products.png" alt="products">
+                        <p>Товары</p>
+                    </a>
+                    <a class="pr-img pr-add" href="add.html">
+                        <img src="assets/images/icons/pradd.png" alt="add">
+                        <p>Добавить товар</p>
+                    </a>
+                </div>
+                <div class="exit">
+                    <a class="exit" href="index.html">
+                        <div class="exit-img">
+                            <img src="assets/images/icons/adexit.png" alt="exit">
+                        </div>
+                        <p>Выйти</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- конец навигации -->
+
+        <!-- форма для заполнения -->
+        <div class="form-inp form-inp-tel">
+            <div class="pr-item">
+                <h2>Панель администратора</h2>
+                <p>Здравствуйте, Админ!</p>
+                <h3>Добавление/редактирование товара</h3>
+            </div>
+            <form>
+                <div class="image-upload">
+                    <p>Добавить фотографию</p>
+                    <img src="assets/images/icons/image.png" alt="image">
+                </div>
+                <div class="form-inp">
+                    <div class="cat-input">
+                        <div class="category">
+                            <p>Артикул</p>
+                            <input class="shadow" type="text" placeholder="Введите артикул">
+                        </div>
+                        <div class="category">
+                            <p>Категория</p>
+                            <select id="category" class="shadow">
+                                <option value="cream">Уход за руками</option>
+                                <option value="cream">Уход за лицом</option>
+                                <option value="cream">Уход за телом</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="category name">
+                        <p>Название</p>
+                        <input class="shadow" type="text" placeholder="Введите название">
+                    </div>
+                    <div class="category name">
+                        <p>Цена</p>
+                        <input class="shadow" type="text" placeholder="Введите цену">
+                    </div>
+                    <div class="category name disc">
+                        <p>Описание</p>
+                        <input class="shadow" type="text" placeholder="Введите описание">
+                    </div>
+                    <a class="item-txt" href="#"><button class="shadow "><img src="assets/images/icons/bagadd.png" alt="add"><b>ДОБАВИТЬ ТОВАР</b></button></a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- конец формы  -->
+</body>
+
+</html>
